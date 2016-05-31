@@ -1,0 +1,1 @@
+insert into FastHeartBeat select avg(a.val), sum(f.c) from AHeart.win:time_batch(90 sec) as a,Fallen.win:time_batch(90 sec) as f having count(f.c) > 2

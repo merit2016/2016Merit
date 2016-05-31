@@ -1,0 +1,1 @@
+insert into LowTemperature select count(value) as c, * from Data.win:time_batch(60 sec) where sensorType like 'S' and value > 36 having count(value) > 3

@@ -1,0 +1,1 @@
+insert into AHeart select value as val from Data where sensorType like 'N' and value > 80
